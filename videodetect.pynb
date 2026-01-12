@@ -1,0 +1,8 @@
+!pip install ultralytics #install package
+
+from ultralytics import YOLO
+
+model = YOLO('yolo11n.pt')
+
+result = model('/content/BD Arrival.mp4',save=True)
+
